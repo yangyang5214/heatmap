@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 gpx_dir=$1
 
 echo 'use gpx_dir $gpx_dir'
