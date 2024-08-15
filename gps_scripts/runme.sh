@@ -13,6 +13,7 @@ gpx_dir=$1
 
 echo 'use gpx_dir $gpx_dir'
 
+perl logdraw.pl -SRCDIR $gpx_dir -TRACK_COLOR "#FFFFFF00" -IMAGE_SIZE 1000
 perl logdraw.pl -SRCDIR $gpx_dir -TRACK_COLOR "#FFFFFF00" -TRACK_THICKNESS 10 -OUTPUT thick.png -IMAGE_SIZE 1000
 
 matrix=""
