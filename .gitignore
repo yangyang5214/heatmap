@@ -1,2 +1,5 @@
 .idea
 gps_scripts/*png
+.garth*
+garmin_export_out
+__pycache__/
