@@ -202,9 +202,9 @@ class Garmin:
         limit = 20
         url = self.garmin_connect_activities
         today = datetime.date.today()
-        start_date = today - datetime.timedelta(days=100)
+        # start_date = today - datetime.timedelta(days=100)
         params = {
-            "startDate": str(start_date.isoformat()),
+            # "startDate": str(start_date.isoformat()), # 设置 start_time
             "endDate": str(today.isoformat()),
             "start": str(start),
             "limit": str(limit),

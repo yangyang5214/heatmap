@@ -1,6 +1,30 @@
 # heatmap
 
+### usage
+
+- 收集所有轨迹文件
+
+```shell
+# 国内
+python3 garmin_export.py -u 'xxxxx' -p 'xxxx' --is-cn
+# 国际
+python3 garmin_export.py -u 'xxxxx' -p 'xxxx'
+```
+
+- run gps_scripts
+
+```shell
+bash runme.sh ./../garmin_export_out
+```
+
+then, open final.png
+
+![](./img/1.png)
+![](./img/2.png)
+
 ### install
+
+> mac + centos 安装成功 下面是部分步骤 仅供参考
 
 > https://github.com/libgd/libgd/blob/master/docs/README.TXT
 

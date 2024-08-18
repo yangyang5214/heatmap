@@ -1,7 +1,6 @@
 #!/bin/bash
 
-set -e
-
+set -x
 
 if [ ! $# -eq 1 ];
 then
@@ -23,5 +22,9 @@ matrix="${matrix} 0.0 0.0 0.6 0.0 0.0"
 matrix="${matrix} 0.0 0.0 0.0 0.0 0.0"
 matrix="${matrix} 0.0 0.0 0.0 0.0 0.0"
 
-convert  thick.png -gaussian-blur 30x10 -color-matrix "${matrix}" halo.png
-convert  halo.png output.png output.png -composite final.png
+magick thick.png -gaussian-blur 30x10 -color-matrix "${matrix}" halo.png
+magick halo.png output.png output.png -composite final.png
+
+rm -f thick.png
+rm -f halo.png
+rm -f output.png
