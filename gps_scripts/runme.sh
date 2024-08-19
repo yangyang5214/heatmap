@@ -28,3 +28,4 @@ magick halo.png output.png output.png -composite final.png
 rm -f thick.png
 rm -f halo.png
 rm -f output.png
+

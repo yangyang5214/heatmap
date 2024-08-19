@@ -24,6 +24,11 @@ then, open final.png
 
 ### install
 
+- imagemagick need v7+
+
+https://imagemagick.org/script/download.php
+https://imagemagick.org/script/install-source.php
+
 > mac + centos 安装成功 下面是部分步骤 仅供参考
 
 > https://github.com/libgd/libgd/blob/master/docs/README.TXT
