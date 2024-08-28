@@ -2,13 +2,14 @@
 
 set -x
 
-if [ ! $# -eq 1 ];
+if [ ! $# -eq 2 ];
 then
   echo 'Example: bash runme.sh <gpx_dir>'
   exit
 fi
 
 gpx_dir=$1
+final_png=$2
 
 echo 'use gpx_dir $gpx_dir'
 
@@ -23,7 +24,7 @@ matrix="${matrix} 0.0 0.0 0.0 0.0 0.0"
 matrix="${matrix} 0.0 0.0 0.0 0.0 0.0"
 
 magick thick.png -gaussian-blur 30x10 -color-matrix "${matrix}" halo.png
-magick halo.png output.png output.png -composite final.png
+magick halo.png output.png output.png -composite $final_png
 
 rm -f thick.png
 rm -f halo.png
